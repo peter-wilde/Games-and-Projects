@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V4X-IR-fuq"/>
+                        <viewControllerLayoutGuide type="bottom" id="WWl-wL-QNQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FYMenu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zXh-qR-Wvs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ih-kC-WiE">
+                                <rect key="frame" x="20" y="479" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTH-wm-LkC">
+                                <rect key="frame" x="-3" y="0.0" width="326" height="872"/>
+                                <state key="normal" title="Touch Screen To Begin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AlZ-Oa-wlL" kind="modal" id="DNq-ym-Urr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YoshiFly1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lni-AT-AMg">
+                                <rect key="frame" x="20" y="329" width="280" height="65"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ZXM-uZ-h7u" appends="YES" id="j9o-wf-QVt"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="HighScoreLabel" destination="4Ih-kC-WiE" id="ao5-C5-Fp6"/>
+                        <outlet property="MBird" destination="lni-AT-AMg" id="bKo-cn-c18"/>
+                        <outlet property="StartButton" destination="lTH-wm-LkC" id="kuo-wi-FA4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZXM-uZ-h7u"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="147"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="j03-P6-zhx">
+            <objects>
+                <viewController id="AlZ-Oa-wlL" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hqX-By-RhP"/>
+                        <viewControllerLayoutGuide type="bottom" id="E2o-lj-1Fk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bwP-aO-EK4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FYMap.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-8P-ijV">
+                                <rect key="frame" x="-10" y="-4" width="340" height="575"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YoshiFly3.png" translatesAutoresizingMaskIntoConstraints="NO" id="sWg-bl-vHX">
+                                <rect key="frame" x="41" y="190" width="40" height="40"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fun-gN-x1w">
+                                <rect key="frame" x="-10" y="-26" width="361" height="620"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartGame:" destination="AlZ-Oa-wlL" eventType="touchUpInside" id="c1v-bO-U0W"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="piranha2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8OR-ee-uqi">
+                                <rect key="frame" x="202" y="256" width="40" height="500"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="piranha2u.png" translatesAutoresizingMaskIntoConstraints="NO" id="O6E-Ls-FHz">
+                                <rect key="frame" x="200" y="-377" width="42" height="525"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pipegraph.png" translatesAutoresizingMaskIntoConstraints="NO" id="0oM-Eq-dGA">
+                                <rect key="frame" x="0.0" y="559" width="320" height="46"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pipegraph.png" translatesAutoresizingMaskIntoConstraints="NO" id="9QD-zf-b1S">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="62"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEj-xi-6Qe">
+                                <rect key="frame" x="26" y="26" width="274" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <color key="textColor" red="0.021668222321892201" green="0.063380191122202265" blue="0.62896993885869568" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcB-cO-gOE">
+                                <rect key="frame" x="-10" y="-8" width="340" height="583"/>
+                                <state key="normal" title="Game Over!!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="VES-CE-b6v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IXx-3E-nXr"/>
+                    <connections>
+                        <outlet property="Bird" destination="sWg-bl-vHX" id="65C-Gp-NcC"/>
+                        <outlet property="Bottom" destination="0oM-Eq-dGA" id="Sqe-5I-GNg"/>
+                        <outlet property="BottomPlant" destination="8OR-ee-uqi" id="LWm-vb-e0O"/>
+                        <outlet property="ExitButton" destination="rcB-cO-gOE" id="v82-ug-vf5"/>
+                        <outlet property="ScoreLabel" destination="yEj-xi-6Qe" id="C2H-S9-4m6"/>
+                        <outlet property="StartGame" destination="fun-gN-x1w" id="DqB-hd-d0N"/>
+                        <outlet property="Top" destination="9QD-zf-b1S" id="CcP-As-sOg"/>
+                        <outlet property="TopPlant" destination="O6E-Ls-FHz" id="x7H-z7-CWG"/>
+                        <outlet property="TunnelBottom" destination="8OR-ee-uqi" id="0Sc-Ki-Z3V"/>
+                        <outlet property="TunnelTop" destination="O6E-Ls-FHz" id="Ynq-62-O7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xfc-jU-llY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FYMap.jpg" width="320" height="480"/>
+        <image name="FYMenu.jpg" width="320" height="480"/>
+        <image name="YoshiFly1.png" width="27" height="31"/>
+        <image name="YoshiFly3.png" width="27" height="31"/>
+        <image name="pipegraph.png" width="320" height="43"/>
+        <image name="piranha2.png" width="16" height="192"/>
+        <image name="piranha2u.png" width="16" height="192"/>
+    </resources>
+    <color key="tintColor" red="0.052875519916255366" green="0.013595132802633667" blue="0.16573963994565222" alpha="1" colorSpace="calibratedRGB"/>
+</document>

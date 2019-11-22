@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2552DB26191462DF009ABCDD /* FYMap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2552DB25191462DF009ABCDD /* FYMap.jpg */; };
+		2552DB281914657C009ABCDD /* FYMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2552DB271914657C009ABCDD /* FYMenu.jpg */; };
+		2552DB511914851C009ABCDD /* YoshiFly1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2552DB4F1914851C009ABCDD /* YoshiFly1.png */; };
+		2552DB521914851C009ABCDD /* YoshiFly3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2552DB501914851C009ABCDD /* YoshiFly3.png */; };
+		2569F5251910CE47006AF1E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2569F5241910CE47006AF1E8 /* Foundation.framework */; };
+		2569F5271910CE47006AF1E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2569F5261910CE47006AF1E8 /* CoreGraphics.framework */; };
+		2569F5291910CE47006AF1E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2569F5281910CE47006AF1E8 /* UIKit.framework */; };
+		2569F52F1910CE47006AF1E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2569F52D1910CE47006AF1E8 /* InfoPlist.strings */; };
+		2569F5311910CE47006AF1E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2569F5301910CE47006AF1E8 /* main.m */; };
+		2569F5351910CE47006AF1E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2569F5341910CE47006AF1E8 /* AppDelegate.m */; };
+		2569F5381910CE47006AF1E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569F5361910CE47006AF1E8 /* Main.storyboard */; };
+		2569F53B1910CE47006AF1E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2569F53A1910CE47006AF1E8 /* ViewController.m */; };
+		2569F53D1910CE47006AF1E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2569F53C1910CE47006AF1E8 /* Images.xcassets */; };
+		2569F5441910CE48006AF1E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2569F5431910CE48006AF1E8 /* XCTest.framework */; };
+		2569F5451910CE48006AF1E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2569F5241910CE47006AF1E8 /* Foundation.framework */; };
+		2569F5461910CE48006AF1E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2569F5281910CE47006AF1E8 /* UIKit.framework */; };
+		2569F54E1910CE48006AF1E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2569F54C1910CE48006AF1E8 /* InfoPlist.strings */; };
+		2569F5501910CE48006AF1E8 /* Flappy_YoshiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2569F54F1910CE48006AF1E8 /* Flappy_YoshiTests.m */; };
+		2569F5601911F658006AF1E8 /* YoshiFly2a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2569F55C1911F658006AF1E8 /* YoshiFly2a.jpg */; };
+		2569F5651911FCBF006AF1E8 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2569F5641911FCBF006AF1E8 /* GameViewController.m */; };
+		2569F56919120941006AF1E8 /* YoshiFly2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 2569F56819120941006AF1E8 /* YoshiFly2a.png */; };
+		2585C8D71914D33E00650A68 /* piranha2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8D51914D33E00650A68 /* piranha2.png */; };
+		2585C8D81914D33E00650A68 /* piranha2a.png in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8D61914D33E00650A68 /* piranha2a.png */; };
+		2585C8DB1914D70400650A68 /* piranha2au.png in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8D91914D70400650A68 /* piranha2au.png */; };
+		2585C8DC1914D70400650A68 /* piranha2u.png in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8DA1914D70400650A68 /* piranha2u.png */; };
+		2585C8DE1914DFD400650A68 /* pipegraph.png in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8DD1914DFD400650A68 /* pipegraph.png */; };
+		2585C8E01915909500650A68 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2585C8DF1915909500650A68 /* AudioToolbox.framework */; };
+		2585C8E4191590F600650A68 /* smw_riding_yoshi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8E1191590F600650A68 /* smw_riding_yoshi.wav */; };
+		2585C8E5191590F600650A68 /* smw_yoshi_runs_away.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8E2191590F600650A68 /* smw_yoshi_runs_away.wav */; };
+		2585C8E6191590F600650A68 /* smw_yoshi_tongue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8E3191590F600650A68 /* smw_yoshi_tongue.wav */; };
+		2585C8EA1915AAA800650A68 /* Mario_Coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8E91915AAA800650A68 /* Mario_Coin.mp3 */; };
+		2585C8EC1915AB9100650A68 /* smw_1-up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8EB1915AB9100650A68 /* smw_1-up.wav */; };
+		2585C8EE1915B2C500650A68 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2585C8ED1915B2C500650A68 /* AVFoundation.framework */; };
+		2585C8F01915B42F00650A68 /* Yoshi_Athletic_Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8EF1915B42F00650A68 /* Yoshi_Athletic_Music.mp3 */; };
+		2585C8F61915BAD400650A68 /* smw_power_up_appears.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2585C8F51915BAD400650A68 /* smw_power_up_appears.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2569F5471910CE48006AF1E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2569F5191910CE47006AF1E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2569F5201910CE47006AF1E8;
+			remoteInfo = "Flappy Yoshi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2552DB25191462DF009ABCDD /* FYMap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FYMap.jpg; sourceTree = "<group>"; };
+		2552DB271914657C009ABCDD /* FYMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FYMenu.jpg; sourceTree = "<group>"; };
+		2552DB4F1914851C009ABCDD /* YoshiFly1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YoshiFly1.png; sourceTree = "<group>"; };
+		2552DB501914851C009ABCDD /* YoshiFly3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YoshiFly3.png; sourceTree = "<group>"; };
+		2569F5211910CE47006AF1E8 /* Flappy Yoshi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Yoshi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2569F5241910CE47006AF1E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2569F5261910CE47006AF1E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2569F5281910CE47006AF1E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2569F52C1910CE47006AF1E8 /* Flappy Yoshi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flappy Yoshi-Info.plist"; sourceTree = "<group>"; };
+		2569F52E1910CE47006AF1E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2569F5301910CE47006AF1E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2569F5321910CE47006AF1E8 /* Flappy Yoshi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flappy Yoshi-Prefix.pch"; sourceTree = "<group>"; };
+		2569F5331910CE47006AF1E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2569F5341910CE47006AF1E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2569F5371910CE47006AF1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2569F5391910CE47006AF1E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2569F53A1910CE47006AF1E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2569F53C1910CE47006AF1E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2569F5421910CE48006AF1E8 /* Flappy YoshiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flappy YoshiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2569F5431910CE48006AF1E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2569F54B1910CE48006AF1E8 /* Flappy YoshiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flappy YoshiTests-Info.plist"; sourceTree = "<group>"; };
+		2569F54D1910CE48006AF1E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2569F54F1910CE48006AF1E8 /* Flappy_YoshiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flappy_YoshiTests.m; sourceTree = "<group>"; };
+		2569F55C1911F658006AF1E8 /* YoshiFly2a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YoshiFly2a.jpg; sourceTree = "<group>"; };
+		2569F5631911FCBF006AF1E8 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ../GameViewController.h; sourceTree = "<group>"; };
+		2569F5641911FCBF006AF1E8 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = ../GameViewController.m; sourceTree = "<group>"; };
+		2569F56819120941006AF1E8 /* YoshiFly2a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YoshiFly2a.png; sourceTree = "<group>"; };
+		2585C8D51914D33E00650A68 /* piranha2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piranha2.png; sourceTree = "<group>"; };
+		2585C8D61914D33E00650A68 /* piranha2a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piranha2a.png; sourceTree = "<group>"; };
+		2585C8D91914D70400650A68 /* piranha2au.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piranha2au.png; sourceTree = "<group>"; };
+		2585C8DA1914D70400650A68 /* piranha2u.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piranha2u.png; sourceTree = "<group>"; };
+		2585C8DD1914DFD400650A68 /* pipegraph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipegraph.png; sourceTree = "<group>"; };
+		2585C8DF1915909500650A68 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2585C8E1191590F600650A68 /* smw_riding_yoshi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_riding_yoshi.wav; sourceTree = "<group>"; };
+		2585C8E2191590F600650A68 /* smw_yoshi_runs_away.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_yoshi_runs_away.wav; sourceTree = "<group>"; };
+		2585C8E3191590F600650A68 /* smw_yoshi_tongue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_yoshi_tongue.wav; sourceTree = "<group>"; };
+		2585C8E91915AAA800650A68 /* Mario_Coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mario_Coin.mp3; sourceTree = "<group>"; };
+		2585C8EB1915AB9100650A68 /* smw_1-up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "smw_1-up.wav"; sourceTree = "<group>"; };
+		2585C8ED1915B2C500650A68 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2585C8EF1915B42F00650A68 /* Yoshi_Athletic_Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yoshi_Athletic_Music.mp3; sourceTree = "<group>"; };
+		2585C8F51915BAD400650A68 /* smw_power_up_appears.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smw_power_up_appears.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2569F51E1910CE47006AF1E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2585C8EE1915B2C500650A68 /* AVFoundation.framework in Frameworks */,
+				2585C8E01915909500650A68 /* AudioToolbox.framework in Frameworks */,
+				2569F5271910CE47006AF1E8 /* CoreGraphics.framework in Frameworks */,
+				2569F5291910CE47006AF1E8 /* UIKit.framework in Frameworks */,
+				2569F5251910CE47006AF1E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2569F53F1910CE48006AF1E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2569F5441910CE48006AF1E8 /* XCTest.framework in Frameworks */,
+				2569F5461910CE48006AF1E8 /* UIKit.framework in Frameworks */,
+				2569F5451910CE48006AF1E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2569F5181910CE47006AF1E8 = {
+			isa = PBXGroup;
+			children = (
+				2569F52A1910CE47006AF1E8 /* Flappy Yoshi */,
+				2569F5491910CE48006AF1E8 /* Flappy YoshiTests */,
+				2569F5231910CE47006AF1E8 /* Frameworks */,
+				2569F5221910CE47006AF1E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2569F5221910CE47006AF1E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2569F5211910CE47006AF1E8 /* Flappy Yoshi.app */,
+				2569F5421910CE48006AF1E8 /* Flappy YoshiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2569F5231910CE47006AF1E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2585C8ED1915B2C500650A68 /* AVFoundation.framework */,
+				2585C8DF1915909500650A68 /* AudioToolbox.framework */,
+				2569F5241910CE47006AF1E8 /* Foundation.framework */,
+				2569F5261910CE47006AF1E8 /* CoreGraphics.framework */,
+				2569F5281910CE47006AF1E8 /* UIKit.framework */,
+				2569F5431910CE48006AF1E8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2569F52A1910CE47006AF1E8 /* Flappy Yoshi */ = {
+			isa = PBXGroup;
+			children = (
+				2569F5331910CE47006AF1E8 /* AppDelegate.h */,
+				2569F5341910CE47006AF1E8 /* AppDelegate.m */,
+				2569F5361910CE47006AF1E8 /* Main.storyboard */,
+				2569F5391910CE47006AF1E8 /* ViewController.h */,
+				2569F53A1910CE47006AF1E8 /* ViewController.m */,
+				2569F5631911FCBF006AF1E8 /* GameViewController.h */,
+				2569F5641911FCBF006AF1E8 /* GameViewController.m */,
+				2569F53C1910CE47006AF1E8 /* Images.xcassets */,
+				2569F52B1910CE47006AF1E8 /* Supporting Files */,
+			);
+			path = "Flappy Yoshi";
+			sourceTree = "<group>";
+		};
+		2569F52B1910CE47006AF1E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2585C8F51915BAD400650A68 /* smw_power_up_appears.wav */,
+				2585C8EF1915B42F00650A68 /* Yoshi_Athletic_Music.mp3 */,
+				2585C8EB1915AB9100650A68 /* smw_1-up.wav */,
+				2585C8E1191590F600650A68 /* smw_riding_yoshi.wav */,
+				2585C8E2191590F600650A68 /* smw_yoshi_runs_away.wav */,
+				2585C8E3191590F600650A68 /* smw_yoshi_tongue.wav */,
+				2585C8DD1914DFD400650A68 /* pipegraph.png */,
+				2585C8D91914D70400650A68 /* piranha2au.png */,
+				2585C8DA1914D70400650A68 /* piranha2u.png */,
+				2585C8D51914D33E00650A68 /* piranha2.png */,
+				2585C8E91915AAA800650A68 /* Mario_Coin.mp3 */,
+				2585C8D61914D33E00650A68 /* piranha2a.png */,
+				2552DB4F1914851C009ABCDD /* YoshiFly1.png */,
+				2552DB501914851C009ABCDD /* YoshiFly3.png */,
+				2552DB25191462DF009ABCDD /* FYMap.jpg */,
+				2552DB271914657C009ABCDD /* FYMenu.jpg */,
+				2569F56819120941006AF1E8 /* YoshiFly2a.png */,
+				2569F55C1911F658006AF1E8 /* YoshiFly2a.jpg */,
+				2569F52C1910CE47006AF1E8 /* Flappy Yoshi-Info.plist */,
+				2569F52D1910CE47006AF1E8 /* InfoPlist.strings */,
+				2569F5301910CE47006AF1E8 /* main.m */,
+				2569F5321910CE47006AF1E8 /* Flappy Yoshi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2569F5491910CE48006AF1E8 /* Flappy YoshiTests */ = {
+			isa = PBXGroup;
+			children = (
+				2569F54F1910CE48006AF1E8 /* Flappy_YoshiTests.m */,
+				2569F54A1910CE48006AF1E8 /* Supporting Files */,
+			);
+			path = "Flappy YoshiTests";
+			sourceTree = "<group>";
+		};
+		2569F54A1910CE48006AF1E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2569F54B1910CE48006AF1E8 /* Flappy YoshiTests-Info.plist */,
+				2569F54C1910CE48006AF1E8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2569F5201910CE47006AF1E8 /* Flappy Yoshi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2569F5531910CE48006AF1E8 /* Build configuration list for PBXNativeTarget "Flappy Yoshi" */;
+			buildPhases = (
+				2569F51D1910CE47006AF1E8 /* Sources */,
+				2569F51E1910CE47006AF1E8 /* Frameworks */,
+				2569F51F1910CE47006AF1E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flappy Yoshi";
+			productName = "Flappy Yoshi";
+			productReference = 2569F5211910CE47006AF1E8 /* Flappy Yoshi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2569F5411910CE48006AF1E8 /* Flappy YoshiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2569F5561910CE48006AF1E8 /* Build configuration list for PBXNativeTarget "Flappy YoshiTests" */;
+			buildPhases = (
+				2569F53E1910CE48006AF1E8 /* Sources */,
+				2569F53F1910CE48006AF1E8 /* Frameworks */,
+				2569F5401910CE48006AF1E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2569F5481910CE48006AF1E8 /* PBXTargetDependency */,
+			);
+			name = "Flappy YoshiTests";
+			productName = "Flappy YoshiTests";
+			productReference = 2569F5421910CE48006AF1E8 /* Flappy YoshiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2569F5191910CE47006AF1E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Peter Wilde";
+				TargetAttributes = {
+					2569F5411910CE48006AF1E8 = {
+						TestTargetID = 2569F5201910CE47006AF1E8;
+					};
+				};
+			};
+			buildConfigurationList = 2569F51C1910CE47006AF1E8 /* Build configuration list for PBXProject "Flappy Yoshi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 2569F5181910CE47006AF1E8;
+			productRefGroup = 2569F5221910CE47006AF1E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2569F5201910CE47006AF1E8 /* Flappy Yoshi */,
+				2569F5411910CE48006AF1E8 /* Flappy YoshiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2569F51F1910CE47006AF1E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2585C8DB1914D70400650A68 /* piranha2au.png in Resources */,
+				2552DB511914851C009ABCDD /* YoshiFly1.png in Resources */,
+				2552DB521914851C009ABCDD /* YoshiFly3.png in Resources */,
+				2569F53D1910CE47006AF1E8 /* Images.xcassets in Resources */,
+				2585C8EA1915AAA800650A68 /* Mario_Coin.mp3 in Resources */,
+				2585C8DE1914DFD400650A68 /* pipegraph.png in Resources */,
+				2569F56919120941006AF1E8 /* YoshiFly2a.png in Resources */,
+				2585C8F61915BAD400650A68 /* smw_power_up_appears.wav in Resources */,
+				2585C8D71914D33E00650A68 /* piranha2.png in Resources */,
+				2585C8D81914D33E00650A68 /* piranha2a.png in Resources */,
+				2569F5601911F658006AF1E8 /* YoshiFly2a.jpg in Resources */,
+				2585C8E6191590F600650A68 /* smw_yoshi_tongue.wav in Resources */,
+				2585C8EC1915AB9100650A68 /* smw_1-up.wav in Resources */,
+				2552DB26191462DF009ABCDD /* FYMap.jpg in Resources */,
+				2552DB281914657C009ABCDD /* FYMenu.jpg in Resources */,
+				2569F52F1910CE47006AF1E8 /* InfoPlist.strings in Resources */,
+				2569F5381910CE47006AF1E8 /* Main.storyboard in Resources */,
+				2585C8E5191590F600650A68 /* smw_yoshi_runs_away.wav in Resources */,
+				2585C8E4191590F600650A68 /* smw_riding_yoshi.wav in Resources */,
+				2585C8DC1914D70400650A68 /* piranha2u.png in Resources */,
+				2585C8F01915B42F00650A68 /* Yoshi_Athletic_Music.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2569F5401910CE48006AF1E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2569F54E1910CE48006AF1E8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2569F51D1910CE47006AF1E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2569F5651911FCBF006AF1E8 /* GameViewController.m in Sources */,
+				2569F53B1910CE47006AF1E8 /* ViewController.m in Sources */,
+				2569F5351910CE47006AF1E8 /* AppDelegate.m in Sources */,
+				2569F5311910CE47006AF1E8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2569F53E1910CE48006AF1E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2569F5501910CE48006AF1E8 /* Flappy_YoshiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2569F5481910CE48006AF1E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2569F5201910CE47006AF1E8 /* Flappy Yoshi */;
+			targetProxy = 2569F5471910CE48006AF1E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2569F52D1910CE47006AF1E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2569F52E1910CE47006AF1E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2569F5361910CE47006AF1E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2569F5371910CE47006AF1E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2569F54C1910CE48006AF1E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2569F54D1910CE48006AF1E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2569F5511910CE48006AF1E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2569F5521910CE48006AF1E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2569F5541910CE48006AF1E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Yoshi/Flappy Yoshi-Prefix.pch";
+				INFOPLIST_FILE = "Flappy Yoshi/Flappy Yoshi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2569F5551910CE48006AF1E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Yoshi/Flappy Yoshi-Prefix.pch";
+				INFOPLIST_FILE = "Flappy Yoshi/Flappy Yoshi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2569F5571910CE48006AF1E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flappy Yoshi.app/Flappy Yoshi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Yoshi/Flappy Yoshi-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Flappy YoshiTests/Flappy YoshiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2569F5581910CE48006AF1E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flappy Yoshi.app/Flappy Yoshi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Yoshi/Flappy Yoshi-Prefix.pch";
+				INFOPLIST_FILE = "Flappy YoshiTests/Flappy YoshiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2569F51C1910CE47006AF1E8 /* Build configuration list for PBXProject "Flappy Yoshi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2569F5511910CE48006AF1E8 /* Debug */,
+				2569F5521910CE48006AF1E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2569F5531910CE48006AF1E8 /* Build configuration list for PBXNativeTarget "Flappy Yoshi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2569F5541910CE48006AF1E8 /* Debug */,
+				2569F5551910CE48006AF1E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2569F5561910CE48006AF1E8 /* Build configuration list for PBXNativeTarget "Flappy YoshiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2569F5571910CE48006AF1E8 /* Debug */,
+				2569F5581910CE48006AF1E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2569F5191910CE47006AF1E8 /* Project object */;
+}
